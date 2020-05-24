@@ -1,0 +1,8 @@
+﻿  auto_sudoku.cpp
+  square.cpp
+g:\visual studio 2017\source\repos\auto_sudoku\auto_sudoku\square.cpp(15): warning C4018: '<': signed/unsigned mismatch
+g:\visual studio 2017\source\repos\auto_sudoku\auto_sudoku\square.cpp(10): warning C4101: 'can': unreferenced local variable
+g:\visual studio 2017\source\repos\auto_sudoku\auto_sudoku\square.cpp(112): warning C4018: '<': signed/unsigned mismatch
+g:\visual studio 2017\source\repos\auto_sudoku\auto_sudoku\square.cpp(113): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  auto_sudoku.vcxproj -> G:\Visual Studio 2017\source\repos\auto_sudoku\Debug\auto_sudoku.exe
