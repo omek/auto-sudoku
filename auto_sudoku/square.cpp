@@ -35,7 +35,6 @@ bool square::check(std::vector<std::vector<int>>&baseSquare, int Height, int Wid
 		if (baseSquare[Height][i] == Num && Width != i) 
 			return false;
 	}
-
 	for (int i = 0; i < 9; i++) {
 		if (baseSquare[i][Width] == Num && Height != i) 
 			return false;
@@ -82,9 +81,6 @@ bool square::solve(std::vector<std::vector<int>>&baseSquare, int H, int W) {
 
 	if (baseSquare[H][W] == 0) {
 		for (int i = 1; i <= 9; i++) {
-			//std::cout << "Candidate: " << i << " for (" << H << ")" << " " << "(" << W << ")" << std::endl;
-	
-			//std::cin.get();
 			if (check(baseSquare, H, W, i)) {
 				baseSquare[H][W] = i;
 				if (solve(baseSquare, H, W + 1)) {
@@ -99,7 +95,6 @@ bool square::solve(std::vector<std::vector<int>>&baseSquare, int H, int W) {
 		return solve(baseSquare, H, W + 1);
 
 	}
-
 	return false;
 }
 
@@ -108,7 +103,6 @@ void square::tryToSolve() {
 	if (!solve(baseSquare, 0, 0)) {
 		std::cout << "Cannot solve this sudoku!" << std::endl;
 	} 
-
 	for (int i = 0; i < baseSquare.size(); i++) {
 		for (int j = 0; j < baseSquare[i].size(); j++)
 			std::cout << baseSquare[i][j];
